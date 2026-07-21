@@ -17,7 +17,7 @@ app.get('/book/:code', (req, res) => {
     const { code } = req.params;
 
     if (!isValidBookCode(code)) {
-        return res.status(400).json({ error: 'Formato de code invalido. Debe ser AAA999.' });
+        return res.status(400).json({ error: 'Formato de codigo invalido. Debe ser AAA999.' });
     }
 
     return res.json({
