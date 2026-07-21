@@ -2,7 +2,7 @@ import { calculateFine, isValidBookCode } from './book.js';
 
 describe('calculateFine()', () => {
     test('calculo correcto para 5 dias', () => {
-        expect(calculateFine(5)).toBe(2.5);
+        expect(calculateFine(5)).toBe(999);
     });
 
     test('cero dias debe retornar 0', () => {
